@@ -22,10 +22,10 @@ const Topbar = () => {
             <IoIosNotifications className="notify" />
             <span className="badge">3</span>
           </div>
-          <div className="icons__container">
+          {/* <div className="icons__container">
             <IoIosNotifications className="notify" />
             <span className="badge">3</span>
-          </div>
+          </div> */}
           <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="topbar__avatar" />
         </div>
       </div>
