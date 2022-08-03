@@ -1,3 +1,8 @@
 .container {
     display: flex;
 }
+
+.main__content {
+    flex: 4;
+    background-color: #ececec;
+}
