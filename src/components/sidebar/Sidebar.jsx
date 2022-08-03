@@ -1,12 +1,11 @@
 import "./sidebar.css";
 
-import { BsFillGridFill  } from "react-icons/bs";
+import { BsFillGridFill } from "react-icons/bs";
+import { BiLogOut } from "react-icons/bi";
 import { MdPanoramaPhotosphereSelect, MdOutlineLiveHelp } from "react-icons/md";
 import { RiBarChartBoxFill, RiAccountBoxLine } from "react-icons/ri";
 import { IoGiftSharp } from "react-icons/io5";
 import { TbWallet } from "react-icons/tb";
-
-// BiLogOut
 
 export default function Sidebar() {
   return (
@@ -19,7 +18,8 @@ export default function Sidebar() {
               <BsFillGridFill className="sidebar__icon" /> Dashboard
             </li>
             <li className="sidebar__listItem">
-              <MdPanoramaPhotosphereSelect className="sidebar__icon" /> Catering Status
+              <MdPanoramaPhotosphereSelect className="sidebar__icon" /> Catering
+              Status
             </li>
             <li className="sidebar__listItem">
               <RiBarChartBoxFill className="sidebar__icon" /> Guest traffic
@@ -40,6 +40,13 @@ export default function Sidebar() {
             </li>
             <li className="sidebar__listItem">
               <MdOutlineLiveHelp className="sidebar__icon" /> Help & Support
+            </li>
+          </ul>
+        </div>
+        <div className="sidebar__btn">
+          <ul className="sidebar__list">
+            <li className="sidebar__listItem">
+              <BiLogOut className="sidebar__icon" /> Log out
             </li>
           </ul>
         </div>
