@@ -15,12 +15,17 @@
   justify-content: space-between;
 }
 
+.topbar__left {
+  padding-left: 15px;
+}
+
 .vorgez-logo {
   cursor: pointer;
 }
 
 .topbar__right {
     display: flex;
+    padding-right: 15px;
 }
 
 .icons__container {

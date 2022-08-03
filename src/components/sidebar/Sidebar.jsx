@@ -1,11 +1,12 @@
 import "./sidebar.css";
 
 import { BsFillGridFill  } from "react-icons/bs";
-import { MdPanoramaPhotosphereSelect } from "react-icons/md";
-import { RiBarChartBoxFill } from "react-icons/ri";
+import { MdPanoramaPhotosphereSelect, MdOutlineLiveHelp } from "react-icons/md";
+import { RiBarChartBoxFill, RiAccountBoxLine } from "react-icons/ri";
 import { IoGiftSharp } from "react-icons/io5";
- 
+import { TbWallet } from "react-icons/tb";
 
+// BiLogOut
 
 export default function Sidebar() {
   return (
@@ -15,33 +16,30 @@ export default function Sidebar() {
           <h5 className="sidebar__title">Main Menu</h5>
           <ul className="sidebar__list">
             <li className="sidebar__listItem active">
-              <BsFillGridFill /> Dashboard
+              <BsFillGridFill className="sidebar__icon" /> Dashboard
             </li>
             <li className="sidebar__listItem">
-              <MdPanoramaPhotosphereSelect /> Catering Status
+              <MdPanoramaPhotosphereSelect className="sidebar__icon" /> Catering Status
             </li>
             <li className="sidebar__listItem">
-              <RiBarChartBoxFill /> Guest traffic
+              <RiBarChartBoxFill className="sidebar__icon" /> Guest traffic
             </li>
             <li className="sidebar__listItem">
-              <IoGiftSharp /> Gifts
+              <IoGiftSharp className="sidebar__icon" /> Gifts
             </li>
           </ul>
         </div>
         <div className="sidebar__menu">
-          <h5 className="sidebar__title">Main Menu</h5>
+          <h5 className="sidebar__title">Settings</h5>
           <ul className="sidebar__list">
             <li className="sidebar__listItem">
-              <BsFillGridFill /> Dashboard
+              <RiAccountBoxLine className="sidebar__icon" /> Account
             </li>
             <li className="sidebar__listItem">
-              <MdPanoramaPhotosphereSelect /> Catering Status
+              <TbWallet className="sidebar__icon" /> Wallet
             </li>
             <li className="sidebar__listItem">
-              <RiBarChartBoxFill /> Guest traffic
-            </li>
-            <li className="sidebar__listItem">
-              <IoGiftSharp /> Gifts
+              <MdOutlineLiveHelp className="sidebar__icon" /> Help & Support
             </li>
           </ul>
         </div>
