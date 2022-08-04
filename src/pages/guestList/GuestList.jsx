@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
+import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { guestRows } from "../../dummyData";
 
@@ -71,26 +72,32 @@ export default function GuestList() {
     <div className="guestList">
       <div
         className="guestListDataTable"
-        style={{ height: 690, width: "100%" }}
+        style={{ 
+            // height: 640, 
+            width: "100%" }}
       >
         <div className="guestListDataShow">
-            <div className="one">
+          <div className="one">
             <p>
-            Show
-            {/* <div className="custom-select"> */}
+              Show
+              {/* <div className="custom-select"> */}
               <select className="custom-select">
                 <option value="0">8</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
               </select>
-            {/* </div> */}
-            Entries
-          </p>
-            </div>
-          
+              {/* </div> */}
+              Entries
+            </p>
+          </div>
+          <div className="two">
+            <form>
+                <FiSearch className="guestSearchIcon" />
+              <input type="search" placeholder="Search name, email or etc" />
+            </form>
+          </div>
         </div>
         <DataGrid
-        className="MuiDataGrid-root"
           rows={data}
           columns={columns}
           pageSize={8}

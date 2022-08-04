@@ -6,72 +6,118 @@
 }
 
 .guestListDataTable {
-    padding: 50px 10px 10px;
+  padding: 10px 10px 10px;
+  height: 690px !important;
 }
 
 .guestListDataShow {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .one {
-    display: inline-block;
-    margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.one select, .one p {
-    display: inline;
-    vertical-align: top;
-    line-height: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-
+.one select,
+.one p {
+  display: inline;
+  vertical-align: top;
+  line-height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .custom-select {
-    width: 60px;
+  width: 60px;
 }
 
+.two {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e1e1eb;
+  border-radius: 0.8rem;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.guestSearchIcon {
+    bottom: -15px;
+}
+
+.two input {
+  border: none;
+  outline: none;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  padding-inline: 25px;
+  height: 100%;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+::placeholder {
+    padding-left: -55px;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: red;
+   padding-left: 15px;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: red;
+  }
+
 .guestListUser {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .guestListImg {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
-.guestListEdit{
-    /* border: none;
+.guestListEdit {
+  /* border: none;
     border-radius: 10px;
     padding: 5px 10px;
     background-color: #3bb077; */
-    color: #979798;
-    cursor: pointer;
-    margin-right: 20px;
+  color: #979798;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
-.guestListDelete{
-    color: #979798;
-    cursor: pointer;
+.guestListDelete {
+  color: #979798;
+  cursor: pointer;
 }
 
 .MuiDataGrid-root {
-    flex: 1;
-    color: rgba(0, 0, 0, 0.87);
-    border: 1px solid rgba(224, 224, 224, 1);
-    height: 90%;
-    display: flex;
-    outline: none;
-    position: relative;
-    font-size: 0.875rem;
-    box-sizing: border-box;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.43;
-    border-radius: 4px;
-    flex-direction: column;
-    letter-spacing: 0.01071em;
+  flex: 1;
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid rgba(224, 224, 224, 1);
+  height: 90%;
+  display: flex;
+  outline: none;
+  position: relative;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  border-radius: 4px;
+  flex-direction: column;
+  letter-spacing: 0.01071em;
 }
