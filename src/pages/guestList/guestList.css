@@ -2,10 +2,11 @@
   flex: 4;
   padding: 5px;
   background: #fff;
+  /* overflow-y: hidden; */
 }
 
 .guestListDataTable {
-    padding: 15px;
+    padding: 50px 10px 10px;
 }
 
 .guestListUser {

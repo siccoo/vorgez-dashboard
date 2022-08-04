@@ -126,7 +126,7 @@ export default function GuestList() {
 
   return (
     <div className="guestList">
-      <div className="guestListDataTable" style={{ height: 700, width: "100%" }}>
+      <div className="guestListDataTable" style={{ height: 690, width: "100%" }}>
       <DataGrid
         rows={rows}
         columns={columns}
