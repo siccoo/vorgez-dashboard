@@ -64,97 +64,124 @@ export const userData = [
     },
   ];
 
-  export const userRows = [
+  export const guestRows = [
     {
       id: 1,
-      username: "Jon Snow",
+      name: "Albert flores",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      contact: "snow@gmail.com, +123456789",
+      status: "come in",
+      address: "Lagos, Nigeria",
     },
     {
       id: 2,
-      username: "Jon Snow",
+      name: "Snow",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      contact: "snow@gmail.com, +123456789",
+      status: "come in",
+      address: "Lagos, Nigeria",
     },
     {
       id: 3,
-      username: "Jon Snow",
+      name: "Snow",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      contact: "snow@gmail.com, +123456789",
+      status: "come in",
+      address: "Lagos, Nigeria",
     },
     {
       id: 4,
-      username: "Jon Snow",
+      name: "Snow",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      contact: "snow@gmail.com, +123456789",
+      status: "come in",
+      address: "Lagos, Nigeria",
     },
     {
       id: 5,
-      username: "Jon Snow",
+      name: "Snow",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      contact: "snow@gmail.com, +123456789",
+      status: "come in",
+      address: "Lagos, Nigeria",
     },
     {
       id: 6,
-      username: "Jon Snow",
+      name: "Snow",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      contact: "snow@gmail.com, +123456789",
+      status: "come in",
+      address: "Lagos, Nigeria",
     },
     {
       id: 7,
-      username: "Jon Snow",
+      name: "Snow",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      contact: "snow@gmail.com, +123456789",
+      status: "come in",
+      address: "Lagos, Nigeria",
     },
     {
       id: 8,
-      username: "Jon Snow",
+      name: "Snow",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      contact: "snow@gmail.com, +123456789",
+      status: "come in",
+      address: "Lagos, Nigeria",
     },
     {
-      id: 9,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 10,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
+        id: 9,
+        name: "Snow",
+        avatar:
+          "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        contact: "snow@gmail.com, +123456789",
+        status: "come in",
+        address: "Lagos, Nigeria",
+      },
+      {
+        id: 10,
+        name: "Snow",
+        avatar:
+          "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        contact: "snow@gmail.com, +123456789",
+        status: "come in",
+        address: "Lagos, Nigeria",
+      },
+      {
+        id: 11,
+        name: "Snow",
+        avatar:
+          "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        contact: "snow@gmail.com, +123456789",
+        status: "come in",
+        address: "Lagos, Nigeria",
+      },
+      {
+        id: 12,
+        name: "Snow",
+        avatar:
+          "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        contact: "snow@gmail.com, +123456789",
+        status: "come in",
+        address: "Lagos, Nigeria",
+      },
+      {
+        id: 13,
+        name: "Snow",
+        avatar:
+          "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        contact: "snow@gmail.com, +123456789",
+        status: "come in",
+        address: "Lagos, Nigeria",
+      },
   ];
 
   export const productRows = [

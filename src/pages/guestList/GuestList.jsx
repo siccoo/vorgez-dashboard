@@ -1,9 +1,18 @@
+import { useState } from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { guestRows } from "../../dummyData";
 
 import "./guestList.css";
 
 export default function GuestList() {
+  const [data, setData] = useState(guestRows);
+
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
+
   const columns = [
     { field: "id", headerName: "ID", width: 110 },
     {
@@ -12,10 +21,10 @@ export default function GuestList() {
       width: 200,
       renderCell: (params) => {
         return (
-        <div className="guestListUser">
+          <div className="guestListUser">
             <img className="guestListImg" src={params.row.avatar} alt="" />
             {params.row.name}
-        </div>
+          </div>
         );
       },
     },
@@ -35,107 +44,42 @@ export default function GuestList() {
       width: 160,
     },
     {
-        field: "action",
-        headerName: "Action",
-        width: 160,
-        renderCell: (params) => {
-            return (
-                <>
-                    <AiFillEdit className="guestListEdit" />
-                    <AiFillDelete className="guestListDelete" />
-                </>
-            )
-        }
-      },
-  ];
+      field: "action",
+      headerName: "Action",
+      width: 160,
+      renderCell: (params) => {
+        return (
+          <>
+            <Link to={"/" + params.row.id}>
+              <AiFillEdit className="guestListEdit" />
+            </Link>
 
-  const rows = [
-    {
-      id: 1,
-      name: "Albert flores",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      contact: "snow@gmail.com, +123456789",
-      status: "come in",
-      address: "Lagos, Nigeria",
-    },
-    {
-      id: 2,
-      name: "Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      contact: "snow@gmail.com, +123456789",
-      status: "come in",
-      address: "Lagos, Nigeria",
-    },
-    {
-      id: 3,
-      name: "Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      contact: "snow@gmail.com, +123456789",
-      status: "come in",
-      address: "Lagos, Nigeria",
-    },
-    {
-      id: 4,
-      name: "Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      contact: "snow@gmail.com, +123456789",
-      status: "come in",
-      address: "Lagos, Nigeria",
-    },
-    {
-      id: 5,
-      name: "Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      contact: "snow@gmail.com, +123456789",
-      status: "come in",
-      address: "Lagos, Nigeria",
-    },
-    {
-      id: 6,
-      name: "Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      contact: "snow@gmail.com, +123456789",
-      status: "come in",
-      address: "Lagos, Nigeria",
-    },
-    {
-      id: 7,
-      name: "Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      contact: "snow@gmail.com, +123456789",
-      status: "come in",
-      address: "Lagos, Nigeria",
-    },
-    {
-      id: 8,
-      name: "Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      contact: "snow@gmail.com, +123456789",
-      status: "come in",
-      address: "Lagos, Nigeria",
+            <AiFillDelete
+              className="guestListDelete"
+              onClick={() => {
+                handleDelete(params.row.id);
+              }}
+            />
+          </>
+        );
+      },
     },
   ];
 
   return (
     <div className="guestList">
-      <div className="guestListDataTable" style={{ height: 690, width: "100%" }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={8}
-        checkboxSelection
-        disableSelectionOnClick
-      />
+      <div
+        className="guestListDataTable"
+        style={{ height: 690, width: "100%" }}
+      >
+        <DataGrid
+          rows={data}
+          columns={columns}
+          pageSize={8}
+          checkboxSelection
+          disableSelectionOnClick
+        />
       </div>
-      
     </div>
   );
 }
