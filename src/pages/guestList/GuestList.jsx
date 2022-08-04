@@ -125,7 +125,8 @@ export default function GuestList() {
   ];
 
   return (
-    <div className="guestList" style={{ height: 550, width: "100%" }}>
+    <div className="guestList">
+      <div className="guestListDataTable" style={{ height: 700, width: "100%" }}>
       <DataGrid
         rows={rows}
         columns={columns}
@@ -133,6 +134,8 @@ export default function GuestList() {
         checkboxSelection
         disableSelectionOnClick
       />
+      </div>
+      
     </div>
   );
 }

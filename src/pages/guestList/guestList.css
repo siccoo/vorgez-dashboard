@@ -1,5 +1,11 @@
 .guestList {
   flex: 4;
+  padding: 5px;
+  background: #fff;
+}
+
+.guestListDataTable {
+    padding: 15px;
 }
 
 .guestListUser {

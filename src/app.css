@@ -5,4 +5,8 @@
 .main__content {
     flex: 4;
     background-color: #ececec;
+    padding: 15px;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
 }
