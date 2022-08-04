@@ -3,6 +3,11 @@ import "./guest.css";
 
 export default function Guest() {
   return (
-    <div className='guest'>Guest</div>
+    <div className='guest'>
+        <div className="guestHeadContainer">
+            <h2 className="guestHead">Edit Guest</h2>
+            <button className="guestAddBtn">Create</button>
+        </div>
+    </div>
   )
 }

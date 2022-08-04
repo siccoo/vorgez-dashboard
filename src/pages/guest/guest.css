@@ -1,3 +1,20 @@
 .guest {
-    
+  flex: 4;
+  padding: 20PX;  
+}
+
+.guestHeadContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guestAddBtn {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: #979798;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
 }
