@@ -1,4 +1,5 @@
 import { DataGrid } from "@material-ui/data-grid";
+import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 
 import "./guestList.css";
 
@@ -22,22 +23,30 @@ export default function GuestList() {
       field: "contact",
       headerName: "Contact",
       width: 200,
-      editable: true,
     },
     {
       field: "status",
       headerName: "Status",
-      type: "number",
       width: 160,
-      editable: true,
     },
     {
       field: "address",
       headerName: "Address",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
       width: 160,
     },
+    {
+        field: "action",
+        headerName: "Action",
+        width: 160,
+        renderCell: (params) => {
+            return (
+                <>
+                    <AiFillEdit className="guestListEdit" />
+                    <AiFillDelete className="guestListDelete" />
+                </>
+            )
+        }
+      },
   ];
 
   const rows = [
