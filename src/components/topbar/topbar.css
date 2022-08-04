@@ -23,6 +23,25 @@
   cursor: pointer;
 }
 
+.topbar__text {
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 550px;
+}
+
+.topbar__text p {
+  color: #a09d9d;
+  /* font-weight: 500; */
+  cursor: pointer;
+}
+
+.topbar__text p:active, .topbar__text p:hover {
+  color: #717171;
+  font-weight: bolder;
+  border-bottom: 2px solid #010110;
+  
+}
+
 .topbar__right {
     display: flex;
     padding-right: 15px;
