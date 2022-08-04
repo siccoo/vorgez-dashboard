@@ -14,3 +14,18 @@
     object-fit: cover;
     margin-right: 10px;
 }
+
+.guestListEdit{
+    /* border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077; */
+    color: #979798;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.guestListDelete{
+    color: #979798;
+    cursor: pointer;
+}
