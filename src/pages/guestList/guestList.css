@@ -89,6 +89,22 @@
   margin-right: 10px;
 }
 
+.guestListStatus {
+    background-color: rgb(144, 248, 248);
+    
+    border-radius: 10px;
+    padding: 5px 7px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.status {
+    margin-top: -15px;
+    top: -15px;
+    color: rgb(11, 94, 94);
+    font-weight: 600;
+}
+
 .guestListEdit {
   /* border: none;
     border-radius: 10px;

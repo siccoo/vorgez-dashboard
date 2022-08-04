@@ -38,7 +38,11 @@ export default function GuestList() {
       field: "status",
       headerName: "Status",
       width: 160,
-      renderCell: (params) => {},
+      renderCell: (params) => {
+        return <div className="guestListStatus">
+            <p className="status">{params.row.status}</p>
+            </div>;
+      },
     },
     {
       field: "address",
@@ -72,9 +76,10 @@ export default function GuestList() {
     <div className="guestList">
       <div
         className="guestListDataTable"
-        style={{ 
-            // height: 640, 
-            width: "100%" }}
+        style={{
+          // height: 640,
+          width: "100%",
+        }}
       >
         <div className="guestListDataShow">
           <div className="one">
@@ -92,7 +97,7 @@ export default function GuestList() {
           </div>
           <div className="two">
             <form>
-                <FiSearch className="guestSearchIcon" />
+              <FiSearch className="guestSearchIcon" />
               <input type="search" placeholder="Search name, email or etc" />
             </form>
           </div>
