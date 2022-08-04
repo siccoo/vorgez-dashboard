@@ -37,6 +37,7 @@ export default function GuestList() {
       field: "status",
       headerName: "Status",
       width: 160,
+      renderCell: (params) => {},
     },
     {
       field: "address",
@@ -72,7 +73,24 @@ export default function GuestList() {
         className="guestListDataTable"
         style={{ height: 690, width: "100%" }}
       >
+        <div className="guestListDataShow">
+            <div className="one">
+            <p>
+            Show
+            {/* <div className="custom-select"> */}
+              <select className="custom-select">
+                <option value="0">8</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            {/* </div> */}
+            Entries
+          </p>
+            </div>
+          
+        </div>
         <DataGrid
+        className="MuiDataGrid-root"
           rows={data}
           columns={columns}
           pageSize={8}
